@@ -1,0 +1,34 @@
+{
+  "name": "@cerberus-design/shorthand",
+  "version": "1.0.0",
+  "description": "The official Panda-CSS preset for the omni-federal design system",
+  "browserslist": "> 0.25%, not dead",
+  "sideEffects": false,
+  "type": "module",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "scripts": {
+    "lint:ts": "tsc --project tsconfig.json --noEmit"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "src/**/*",
+    "index.ts"
+  ],
+  "keywords": [
+    "panda-css",
+    "omni-federal",
+    "design-system",
+    "css",
+    "recipe",
+    "ui",
+    "ui library",
+    "panda-css ui",
+    "digital university",
+    "du design system"
+  ],
+  "author": "developers@omnifederal.com",
+  "license": "ISC"
+}

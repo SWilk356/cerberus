@@ -254,6 +254,8 @@ importers:
         specifier: ^0.53.2
         version: 0.53.2
 
+  packages/panda-shorthand: {}
+
   packages/react:
     dependencies:
       '@ark-ui/react':
