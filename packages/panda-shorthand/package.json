@@ -10,6 +10,12 @@
   "scripts": {
     "lint:ts": "tsc --project tsconfig.json --noEmit"
   },
+  "devDependencies": {
+    "@pandacss/preset-base": "^0.53.3",
+    "@pandacss/types": "^0.53.3",
+    "@typescript-eslint/utils": "^8.28.0",
+    "@typescript-eslint/types": "8.28.0"
+  },
   "publishConfig": {
     "access": "public"
   },

@@ -1,5 +1,6 @@
 {
   "name": "@cerberus/panda-shorthand",
   "version": "1.0.0",
-  "exports": "./src/index.ts"
+  "exports": "./src/index.ts",
+  "license": "UNLICENSED"
 }
