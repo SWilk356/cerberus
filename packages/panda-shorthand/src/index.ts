@@ -11,7 +11,6 @@ const pkg: Package = JSON.parse(
 ) as Package
 
 const preferPandaShorthandPlugin = {
-  // preferred location of name and version
   meta: {
     name: pkg.name,
     version: pkg.version,
