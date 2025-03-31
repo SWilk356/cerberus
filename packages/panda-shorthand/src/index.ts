@@ -1,15 +1,22 @@
+/**
+ * ESLint rule to enforce the usage of Panda CSS shorthand property names.
+ *
+ * This rule checks for standard CSS properties and suggests using their
+ * corresponding Panda CSS shorthand properties, if available.
+ *
+ * @module PandaCssShorthandRule
+ */
+
 import { preset } from '@pandacss/preset-base'
 import type { PropertyConfig } from '@pandacss/types'
 import { AST_NODE_TYPES, TSESLint, TSESTree } from '@typescript-eslint/utils'
 import { RuleFixer } from '@typescript-eslint/utils/ts-eslint'
 
-//TODO: make sure is eslint8 compatible - flat config
-module.exports = {
+const preferPandaShorthand: TSESLint.RuleModule<'useShorthand', []> = {
   meta: {
     type: 'suggestion',
     docs: {
       description: 'Enforce Panda CSS shorthand property names',
-      category: 'Best Practices',
     },
     messages: {
       useShorthand:
@@ -18,14 +25,7 @@ module.exports = {
     fixable: 'code',
     schema: [],
   },
-  create: function (context: {
-    report: (arg0: {
-      node: TSESTree.Identifier
-      messageId: string
-      data: { shorthand: string; original: string }
-      fix(fixer: RuleFixer): TSESLint.RuleFix
-    }) => void
-  }) {
+  create(context: Readonly<TSESLint.RuleContext<'useShorthand', []>>) {
     // Mapping of standard CSS properties to Panda CSS shorthands
     const propertyMap: { [key: string]: string | string[] } = {}
     for (const cssProperty of Object.entries(preset.utilities)) {
@@ -88,4 +88,7 @@ module.exports = {
       },
     }
   },
+  defaultOptions: [],
 }
+
+export default preferPandaShorthand
