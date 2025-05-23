@@ -24,15 +24,8 @@ updates:
     directory: '/packages/panda-preset'
     schedule:
       interval: daily
-  - package-ecosystem: npm
-    directory: '/packages/styled-system'
-    schedule:
-      interval: daily
+
   - package-ecosystem: npm
     directory: '/packages/react'
-    schedule:
-      interval: daily
-  - package-ecosystem: npm
-    directory: '/packages/icons'
     schedule:
       interval: daily

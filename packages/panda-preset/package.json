@@ -1,6 +1,6 @@
 {
   "name": "@cerberus-design/panda-preset",
-  "version": "0.18.1",
+  "version": "0.18.3",
   "description": "The official Panda-CSS preset for the omni-federal design system",
   "browserslist": "> 0.25%, not dead",
   "sideEffects": false,
@@ -14,15 +14,15 @@
     "lint:ts": "tsc --project tsconfig.lint.json --noEmit"
   },
   "peerDependencies": {
-    "@pandacss/dev": "^0.53.2",
+    "@pandacss/dev": "^0.53.3",
     "autoprefixer": "*",
     "postcss": "*"
   },
   "devDependencies": {
-    "@ark-ui/react": "^5.0.1",
+    "@ark-ui/react": "^5.9.0",
     "@cerberus-design/configs": "workspace:*",
-    "@pandacss/dev": "^0.53.2",
-    "@pandacss/types": "^0.53.2"
+    "@pandacss/dev": "^0.53.3",
+    "@pandacss/types": "^0.53.3"
   },
   "publishConfig": {
     "access": "public",
